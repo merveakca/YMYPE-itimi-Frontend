@@ -1,0 +1,200 @@
+<html>
+
+<head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <style>
+        #editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1>Input HTML</h1>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Merve Akça" />
+    <br>
+    <br>
+    <label for="number">Number</label>
+    <input type="number" id="number" placeholder="5">
+    <br>
+    <br>
+    <label for="check">Test CheckBox1</label>
+    <input type="checkbox" name="" id="check">
+    <label for="check">Test CheckBox2</label>
+    <input type="checkbox" name="" id="check">
+    <label for="check">Test CheckBox3</label>
+    <input type="checkbox" name="" id="check">
+    <br>
+    <br>
+    <label for="email">Email</label>
+    <input type="email">
+    <br>
+    <br>
+    <input type="button" value="Save">
+    <br>
+    <br>
+    <input type="date" value="2023-08-14">
+    <input type="datetime-local" value="2023-08-14 21:34">
+    <input type="datetime-local">
+    <br>
+    <br>
+    <input type="password" id="password">
+    <button onclick="myFunction()">Göster/Gizle</button>
+    <script>
+        const passwordElement = document.querySelector("#password");
+        function myFunction() {
+            if (passwordElement.type === "password") {
+                passwordElement.type = "Text"
+            }
+            else { passwordElement.type = "password" }
+        }
+    </script>
+    <br>
+    <br>
+    <input type="color" id="color" oninput="getChange()">
+    <script>
+        function getChange() {
+            const element = document.querySelector("#color");
+            console.log(element.value)
+            const bodyElement = document.querySelector("body");
+            bodyElement.style.backgroundColor = element.value
+        }
+    </script>
+    <br>
+    <br>
+    <input type="file" multiple>
+    <br>
+    <br>
+    <input type="time">
+    <input type="week">
+    <br>
+    <br>
+    <input type="radio" name="radio">
+    Radio 1
+    <input type="radio" name="radio">
+    Radio 2
+    <input type="radio" name="radio">
+    Radio 3
+    <input type="radio" name="radio">
+    Hiçbiri
+    <br>
+    <br>
+    <select>
+        <option>Hiçbiri</option>
+        <option>Sos 1</option>
+        <option>Sos 2</option>
+        <option>Sos 3</option>
+    </select>
+    <br>
+    <br>
+    <textarea></textarea>
+    <br>
+    <br>
+    <!-- <div id="editor"></div>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/javascript");
+    </script> -->
+    <br>
+    <br>
+    <form>
+        <input required>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+    </form>
+
+    <br>
+    <br>
+    <ul style="list-style: lower-latin;">
+        <li>Deneme 1</li>
+        <li>Deneme 2</li>
+        <li>Deneme 3</li>
+    </ul>
+    <ol style="list-style: lower-latin;">
+        <li>Deneme 1</li>
+        <li>Deneme 2</li>
+        <li>Deneme 3</li>
+    </ol>
+    <br>
+    <br>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid;
+            background-color: rgb(204, 195, 195);
+        }
+
+        td {
+            border: 1px solid;
+        }
+    </style>
+    <table style="width: 100%; border: 1px solid;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Merve</td>
+                <td>Akça</td>
+                <td>
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mevlüt</td>
+                <td>Akça</td>
+                <td>
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="reset">Beni Tıkla</button>
+    <br>
+    <br>
+    <img src="https://w.forfun.com/fetch/09/0911a329b15eaad76405728cb97dbd69.jpeg" width="400" height="315">
+    <br>
+    <br>
+    <video controls width="560">
+        <source src="./video.mp4">
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AJhbCqY3DrY?si=vNHvpNrmLwTmTrxN"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <div>
+        <p>dsfbdd</p>
+        <p>cxvfbgnhfndg gn</p>
+        <p>Lorem ipsum, dolor sit <b>elam</b> amet consectetur <strong>adipisicing</strong> elit. Ex odio id tempora
+            quis ipsam. Provident molestias voluptate, quos quod perferendis nulla autem hic, culpa aperiam <span
+                style="display: block;">obcaecati</span> vel fuga <i>recusandae</i> deleniti.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugiat consequuntur iure minus qui
+            architecto repellat. Similique maxime aspernatur iusto tenetur culpa modi commodi dolor harum, quisquam
+            impedit. Ipsum, earum.</p>
+        <br>
+    </div>
+    <div style="margin-bottom: 5000px;"></div>
+</body>
+
+</html>
